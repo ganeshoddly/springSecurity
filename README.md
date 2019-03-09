@@ -1,12 +1,16 @@
-################
-# springSecurity
-################
 
-# To override the default "user" and "generated password"
+# springSecurity
+
+# 
+------------------------------------------------------------
+To override the default "user" and "generated password"
+------------------------------------------------------------
 spring.security.user.name=admin
 spring.security.user.password=admin
 
-#Add MySecurityConfig with @EnableWebSecurity
+------------------------------------------------------------
+Add MySecurityConfig with @EnableWebSecurity
+------------------------------------------------------------
 override configure
 and add patterns 
 hit postman request -> http://localhost:8080/v1/floor1/office1 "admin/admin"
@@ -18,8 +22,9 @@ hit postman request -> http://localhost:8080/v1/floor1/office1 "admin/admin"
     "path": "/v1/floor1/office1"
 	}
 	
-	
-#NOT USED HERE -- JUST FOR REFERENCE
+------------------------------------------------------------	
+NOT USED HERE -- JUST FOR REFERENCE
+------------------------------------------------------------
 @Autowired
 private UserService userService;
 
